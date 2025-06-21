@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id 'application'
+
+}
+
+group = 'dev.extsayzz.textify'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("io.netty:netty-all:5.0.0.Alpha2")
+}
+
+mainClassName = 'dev.extsayzz.textify.chat.client.ChatClient'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'dev.extsayzz.textify.chat.client.ChatClient'
+        )
+    }
+}
