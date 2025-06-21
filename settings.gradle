@@ -1,2 +1,3 @@
 rootProject.name = 'Texitfy'
 include 'Textify-Server'
+include 'Textify-Client'
